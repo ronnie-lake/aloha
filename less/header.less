@@ -1,0 +1,178 @@
+.container {
+	width: 1400px;
+	margin: 0 auto;
+}
+.header {
+	height: 88px;
+	text-align: center;
+
+	&__link {
+		display: block;
+	}
+
+	&__logo {
+		width: 90px;
+		height: 42px;
+		float: left;
+		margin: 20px 0 0 26px;
+	}
+
+	&__menu {
+		display: inline-block;
+		margin-top: 30px;
+	}
+
+	&__basket {
+		float: right;
+		margin: 20px 30px 0 0;
+	}
+
+}
+.menu {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	color: #2d2d2d;
+	font-size: 17px;
+	padding-left: 0; 
+	
+	&__item {
+		display: inline-block;
+		list-style: none;
+		
+		&_block {
+			display: block;
+			color: #fff;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__item:not(:last-child) {
+		padding-right: 34px;
+	}
+
+	&__link {
+		display: inline-block;
+		cursor: pointer;
+
+		&_white {
+			color: #cacaca;
+		}
+
+		&_icon {
+			padding-left: 25px;
+		}
+
+		&_fb { 
+			background: url(../img/fb.png) no-repeat 5px 5px;
+		}
+
+		&_tw {
+			background: url(../img/tw.png) no-repeat;
+		}
+
+		&_in {
+			background: url(../img/inst.png) no-repeat;
+		}
+
+		&_pt {
+			background: url(../img/pt.png) no-repeat;
+		}
+
+		&_gl {
+			background: url(../img/gl.png) no-repeat;
+		}
+	}
+}
+.basket {
+		width: 46px;
+		height: 46px;
+		border-radius: 50%;
+		border: 1px solid #e6e6e6;
+		position: relative;
+		background: url(../img/basket.jpg) no-repeat 14px 14px;
+
+		&__link {
+			display: block;
+			width: 46px;
+			height: 46px;
+			overflow: hidden;
+		}
+
+		&__counter {
+			position: absolute;
+			display: inline-block;
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			color: #fff;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 10px;
+			background-color: #e2574c;
+			text-align: center;
+			top: -5px;
+			right: -5px;
+			box-sizing: border-box;
+			padding-top: 4px;
+		}
+}
+.viewport {
+
+	&__body {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	&__item {
+		position: relative;
+		display: none;
+		width: 1400px;
+		height: 865px;
+
+		&_active {
+			display: block;
+		}
+	}
+
+	&__descript {
+		padding: 360px 410px 0 410px;
+		text-align: center;
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+	&__text1 {
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		font-weight: 800;
+		color: #fff;
+		text-transform: uppercase;
+		margin: 0 0 30px 0;
+	}
+
+	&__text2 {
+		font-family: 'Playfair Display', serif;
+		font-size: 50px;
+		color: #fff;
+		margin: 0px;
+	}
+
+	&__button {
+		padding: 18px 30px;
+		background-color: #2d2d2d;
+		border-radius: 35px;
+		font-size: 16px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 800;
+		color: #fff;
+		text-transform: uppercase;
+		border: none;
+		margin: 40px 0 0 0;
+		cursor: pointer;
+	}
+}

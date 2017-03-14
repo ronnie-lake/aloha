@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/ronnie-lake/aloha#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
-    "gulp-less": "^3.3.0"
+    "gulp-less": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-watch": "^4.3.11"
   }
 }
