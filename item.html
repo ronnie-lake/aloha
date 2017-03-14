@@ -3,187 +3,198 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Item</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Montserrat|Open+Sans:400,600,600i,700,700i|Playfair+Display:400,400i,700,700i|Raleway:400,500,600" rel="stylesheet">
 </head>
 <body>
-	<header class="header">
-		<div class="header__logo">
-			<div class="logo">
-				<a href="#" class="logo__link">
-					<img src="" alt="" class="logo__img">
-				</a>
-			</div>
-		</div>
-		<div class="header__menu">
-			<ul class="menu">
-				<li class="menu__item">
-					<a class="menu__link">Mens</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__link">Womens</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__link">Bags</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__link">Home</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__link">Sale</a>
-				</li>
-			</ul>
-		</div>
-		<div class="header__basket">
-			<div class="basket">
-				<a href="#" class="basket__link">
-					<span class="basket__counter">2</span>
-				</a>
-			</div>
-		</div>
-	</header>
-	<main class="item">
-		<div class="container">
-			<div class="item__content">
-				<div class="item__viewport-body">
-					<ul class="item__viewport">
-						<li>
-							<img src="../img/slide.jpg" alt="">
-						</li>
-						<li>
-							<img src="" alt="">
-						</li>
-						<li>
-							<img src="" alt="">
-						</li>
-					</ul>
+	<div class="container">
+		<header class="header">
+			<div class="header__logo">
+				<div class="logo">
+					<a href="#" class="logo__link">
+						<img src="img/aloha.png" alt="" class="logo__img">
+					</a>
 				</div>
-				<div class="item__descript">
-					<span class="descript__nav">Back to: <a class="descript__link" href="#">Dresses</a></span>
-					<span class="descript__nav"><a class="descript__link" href="#">Previous</a>/<a href="#">Next</a></span>
-					<span class="descript__designer">Christopher Kane</span>
-					<h1 class="descript__product-name">Striped Stretch Dress</h1>
-					<p class="descript__description">This is a sample product only, and not available for purchase. Ellentesque habitant morbi tristique senectus et netus malesuada fames acturpis not egestas netus. Vestibulum tortor quam, feugiat vitae, ultricies eget ante. Donec tempor sit amet eu libero sit habitant amet quam egestas morbi tristique.</p>
-					<div>
-						<select>
-							<option value="">Size</option>
-							<option value="">Size</option>
-							<option value="">Size</option>
-							<option value="">Size</option>
-							<option value="">Size</option>
-						</select>
-						<select>
-							<option value="">Color</option>
-							<option value="">Color</option>
-							<option value="">Color</option>
-							<option value="">Color</option>
-							<option value="">Color</option>
-						</select>
+			</div>
+			<div class="header__menu">
+				<ul class="menu">
+					<li class="menu__item">
+						<a class="menu__link">Mens</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link">Womens</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link">Bags</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link">Home</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link">Sale</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__basket">
+				<div class="basket">
+					<a href="#" class="basket__link">
+						<span class="basket__counter">2</span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<main class="item">
+				<div class="item__content">
+						<ul class="item__viewport">
+							<li class="item__viewport-img item__viewport-img_active">
+								<img src="img/item.png" alt="">
+							</li>
+							<li class="item__viewport-img">
+								<img src="img/item.png" alt="">
+							</li>
+							<li class="item__viewport-img">
+								<img src="img/item.png" alt="">
+							</li>
+						</ul>
+					<div class="item__descript">
+						<span class="descript__nav">Back to: <a class="descript__link" href="#">Dresses</a></span>
+						<span class="descript__nav_right"><a class="descript__link_right" href="#">Previous</a>/<a class="descript__link descript__link_right" href="#">Next</a></span>
+						<span class="descript__designer">Christopher Kane</span>
+						<h1 class="descript__product-name">Striped Stretch Dress</h1>
+						<p class="descript__description">This is a sample product only, and not available for purchase. Ellentesque habitant morbi tristique senectus et netus malesuada fames acturpis not egestas netus. Vestibulum tortor quam, feugiat vitae, ultricies eget ante. Donec tempor sit amet eu libero sit habitant amet quam egestas morbi tristique.</p>
+						<div>
+							<select>
+								<option value="">Size</option>
+								<option value="">Size</option>
+								<option value="">Size</option>
+								<option value="">Size</option>
+								<option value="">Size</option>
+							</select>
+							<select>
+								<option value="">Color</option>
+								<option value="">Color</option>
+								<option value="">Color</option>
+								<option value="">Color</option>
+								<option value="">Color</option>
+							</select>
+						</div>
+						<span class="descript__price">$309 <span class="descript__price descript__price_through">$799</span></span>
+						<form  class="descript__form" action="">
+							<input  class="descript__input" type="text" placeholder="1">
+							<button class="descript__button" >Buy now</button>
+						</form>
+					</div>
+					<div class="likes">
+						<h2 class="likes__caption"><span class="likes__caption likes__caption_italic">You might </span>Also Like</h2>
+						<ul class="product__list">
+							<li class="product__item">
+								<a class="product__link" href="#">
+									<img class="product__img" src="img/10prod.jpg" alt="">
+									<p class="product__category">Dresses</p>
+									<h3 class="product__name">Striped Stretch Dress</h3>
+									<p class="product__price">479.00</p>
+									<span class="product__label product__label_soldout">Sold Out</span>
+								</a>
+							</li>
+							<li class="product__item">
+								<a class="products__link" href="#">
+									<img class="products__img" src="img/8prod.jpg" alt="">
+									<p class="products__category">Dresses</p>
+									<h3 class="products__name">Blue Sexual Dress</h3>
+									<p class="products__price">329.00</p>
+							</a>
+							</li>
+							<li class="product__item">
+							<a class="product__link" href="#">
+								<img class="products__img" src="img/7prod.jpg" alt="">
+								<p class="product__category">Dresses</p>
+								<h3 class="product__name">Stretch Wool Dress</h3>
+								<p class="product__price"><span class="product__price product__price_through">£799.00</span> 229.00</p>
+								<span  class="product__label product__label_sale">Sale</span>
+							</a>
+							</li>
+							<li class="product__item">
+								<a class="product__link" href="#">
+									<img src="img/4prod.jpg">
+									<p class="product__category">Dresses</p>
+									<h3 class="product__name">Striped Strech Dress</h3>
+									<p class="product__price">£479.00</p>
+									<span class="product__label product__label_soldout">Sold Out</span>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<div class="likes">
-					<h2 class="likes__caption"><span class="likes__caption likes__caption_italic">You might</span>Also Like</h2>
-					<ul class="product__list">
-						<li class="product__item">
-							<a href="#">
-								<img class="product__img" src="" alt="">
-								<p class="product__category">T-shirt</p>
-								<p class="product__name">Green Village T-shirt</p>
-								<p class="product__price">109.00</p>
-							</a>
+		<footer class="footer">
+			<div class="footer__info">
+				<span class="footer__copy">© 2015, Aloha Theme. </span>
+				<span class="footer__copy">Powered by <span class="footer__copy footer__copy_dash">ThemeForest</span> & <span class="footer__copy footer__copy_dash">PixelBuddha</span>.</span>
+				<span class="footer__contacts">438-793-2227, <span class="footer__copy footer__contacts_dash">info@boxtheme.com</span></span>
+				<span class="footer__address">USA, San Francisco</span>
+				<span class="footer__address">1575 De l’Avenir Blvd, Suite 2, Laval (QC), H7S</span>
+			</div>
+			<div class="footer__container">
+				<div class="footer__menu">
+					<ul class="menu">
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white">Mens</a>
 						</li>
-						<li class="product__item">
-							<a href="#">
-								<img class="product__img" src="" alt="">
-								<p class="product__category">Shirts</p>
-								<p class="product__name">Cotton Blue Shirt</p>
-								<p class="product__price">209.00</p>
-							</a>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white">Womens</a>
 						</li>
-						<li class="product__item">
-							<a href="#">
-								<img class="product__img" src="" alt="">
-								<p class="product__category">T-shirts</p>
-								<p class="product__name">Emmet Cable T-Shirt</p>
-								<p class="product__price">139.00</p>
-							</a>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white">Bags</a>
 						</li>
-						<li class="product__item">
-							<a href="#">
-								<img class="product__img" src="" alt="">
-								<p class="product__category">Dresses</p>
-								<p class="product__name">Striped Stretch Dress</p>
-								<p class="product__price">479.00</p>
-							</a>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white">Home</a>
+						</li>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white">Sale</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__add-menu">
+					<ul class="menu">
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white">Shopping rates</a>
+						</li>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white">Return policy</a>
+						</li>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white">About us</a>
+						</li>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white">Contact us</a>
+						</li>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white">Our blog</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__social">
+					<ul class="menu">
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white menu__link_icon menu__link_fb">Facebook</a>
+						</li>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white menu__link_icon menu__link_tw">Twitter</a>
+						</li>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white menu__link_icon menu__link_in">Instagram</a>
+						</li>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white menu__link_icon menu__link_pt">Pinterest</a>
+						</li>
+						<li class="menu__item menu__item_block">
+							<a class="menu__link menu__link_white menu__link_icon menu__link_gl">Google+</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-		</div>
-	<footer>
-		<div class="footer__info">
-			<span class="footer__copy">© 2015, Aloha Theme. </span>
-			<span class="footer__copy">Powered by <span class="footer__copy footer__copy_dash">ThemeForest</span> & <span class="footer__copy footer__copy_dash">PixelBuddha</span>.</span>
-			<span class="footer__contacts">438-793-2227, <span class="footer__copy footer__contacts_dash">info@boxtheme.com</span></span>
-			<span class="footer__address">USA, San Francisco</span>
-			<span class="footer__address">1575 De l’Avenir Blvd, Suite 2, Laval (QC), H7S</span>
-		</div>
-		<div class="footer__menu">
-			<ul class="menu">
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white">Mens</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white">Womens</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white">Bags</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white">Home</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white">Sale</a>
-				</li>
-			</ul>
-		</div>
-		<div class="footer__add-menu">
-			<ul class="menu">
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white">Shopping rates</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white">Return policy</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white">About us</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white">Contact us</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white">Our blog</a>
-				</li>
-			</ul>
-		</div>
-		<div class="footer__social">
-			<ul class="menu">
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white menu__link_icon menu__link_fb">Facebook</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white menu__link_icon menu__link_tw">Twitter</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white menu__link_icon menu__link_in">Instagram</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white menu__link_icon menu__link_pt">Pinterest</a>
-				</li>
-				<li class="menu__item menu__item_block">
-					<a class="menu__link menu__link_white menu__link_icon menu__link_gl">Google+</a>
-				</li>
-			</ul>
-		</div>
-	</footer>
-	</main>
+		</footer>
+		</main>
+	</div>
 </body>
 </html>

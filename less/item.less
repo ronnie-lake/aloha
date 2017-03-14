@@ -1,0 +1,211 @@
+.item {
+
+	&__content {
+		margin-top: 5px;
+		padding-bottom: 54px;
+	}
+
+	&__viewport {
+		list-style: none;
+		display: inline-block;
+		margin-left: 11px;
+		// width: 675px;
+		// height: 672px;
+	}
+
+	&__viewport-img {
+		display: none;
+
+		&_active {
+		display: inline-block;
+		}
+	}
+
+	&__descript {
+		display: inline-block;
+		width: 660px;
+		vertical-align: top;
+		padding: 55px 50px;
+	}
+}
+.descript {
+
+	&__nav {
+		color: #242424;
+		font-size: 16px;
+		font-family: 'Playfair Display', serif;
+		display: inline-block;
+
+		&_right {
+			float: right;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #242424;
+
+		&_right {
+			color: #242424;
+		font-size: 16px;
+		font-family: 'Playfair Display', serif;
+		text-decoration: none;
+		}
+	}
+
+	&__designer {
+		display: block;
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+		color: #e2574c;
+		margin: 65px 0 24px 0;
+	}
+
+	&__product-name {
+		font-family: 'Playfair Display', serif;
+		font-size: 46px;
+		color: #242424;
+
+	}
+
+	&__description {
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		color: #7e7e7e;
+		line-height: 27px;
+		margin: 45px 0 45px 0;
+	}
+	&__price {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 30px;
+		color: #e2574c;
+
+		&_through {
+			color: #b1b0b0;
+			font-size: 22px;
+			text-decoration: line-through;
+		}
+	}
+
+	&__form {
+		width: 215px;
+		display: inline-block;
+		text-align: center;
+		width: 270px;
+		margin: 30px 0 40px 0;
+	}
+
+	&__input {
+		padding: 16px 15px;
+		border: 1px solid #ebebeb;
+		border-radius: 25px;
+		background-color: #f8f8f8;
+		color: #7e7e7e;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		width: 42px;
+		margin-left: 20px;
+	}
+
+	&__button {
+		border: none;
+		border-radius: 25px;
+		background-color: #e2574c;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-family: 'Raleway', sans-serif;
+		padding: 16px 38px;
+		color: #fff;
+		font-weight: 700;
+	}
+}
+.likes {
+
+	&__caption {
+			font-family: 'Playfair Display', serif;
+			color: #242424;
+			font-size: 20px;
+			text-align: center;
+			// margin: 80px 0 11px 0;
+			padding: 46px 0 43px 0;
+			overflow: hidden;
+
+		&_italic {
+			font-style: italic;
+		}
+	}
+}
+.product {
+	font-size: 0;
+
+	&__list {
+		font-size: 0;
+		list-style: none;
+	}
+
+	&__item {
+		width: 350px;
+		display: inline-block;
+		text-align: center;
+		position: relative;
+		line-height: 7px;
+		margin-bottom: 35px;
+	}
+	&__link { 
+		display: block;
+		height: 100%;
+		text-decoration: none;
+	}
+
+	&__category {
+		font-family: 'Raleway', sans-serif;
+		font-size: 11px;
+		text-transform: uppercase;
+		color: #9e9e9e;
+		margin-top: 50px;
+	}
+	&__name {
+		font-family: 'Playfair Display', serif;
+		color: #242424;
+		font-size: 18px;
+		margin: 15px 0 17px 0;
+	}
+	&__price {
+		font-family: 'Open Sans', sans-serif;
+		color: #e66c62;
+		font-size: 13px;
+
+		&_through {
+			color: #7e7e7e;
+			text-decoration: line-through;
+		}
+	}
+
+	&__label {
+		display: block;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		font-size: 10px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 800;
+		text-transform: uppercase;
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		left: 0;
+		line-height: 11px;
+
+		&_sale {
+			border: 2px solid #e2574c;
+			color: #e2574c;
+			padding-top: 16px;
+		}
+
+		&_soldout {
+			border: 2px solid #26a1bb;
+			color: #26a1bb;
+			padding-top: 12px;
+		}
+	}
+}
