@@ -44,7 +44,6 @@
 .menu {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
-  color: #2d2d2d;
   font-size: 17px;
   padding-left: 0;
   text-transform: uppercase;
@@ -52,10 +51,6 @@
 .menu__item {
   display: inline-block;
   list-style: none;
-  transition: all 0.3s ease;
-}
-.menu__item:hover {
-  color: #d4d4d4;
 }
 .menu__item_block {
   font-size: 16px;
@@ -70,6 +65,12 @@
 .menu__link {
   display: inline-block;
   cursor: pointer;
+  text-decoration: none;
+  color: #2d2d2d;
+  transition: all 0.3s ease;
+}
+.menu__link:hover {
+  color: #d4d4d4;
 }
 .menu__link_white {
   transition: all 0.3s ease;
@@ -616,6 +617,9 @@
   margin: 33px 0 98px 0;
   letter-spacing: -0.4px;
 }
+.womens__select {
+  display: none;
+}
 .menu-list {
   list-style: none;
 }
@@ -884,10 +888,6 @@
   width: 131px;
   padding: 3px 0;
 }
-.size .selectric {
-  border-radius: 25px;
-  border: 1px solid #ececec;
-}
 .color {
   display: inline-block;
   vertical-align: top;
@@ -897,7 +897,7 @@
   width: 233px;
   padding: 3px 0;
 }
-.color .selectric {
+.selectric {
   border-radius: 25px;
   border: 1px solid #ececec;
 }
@@ -1198,6 +1198,14 @@
     width: auto;
   }
   .womens__menu {
+    display: none;
+  }
+  .womens__select {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 450px;
+    padding: 0 20px;
+    display: block;
     margin-bottom: 65px;
   }
   .womens__caption {
@@ -1206,6 +1214,9 @@
   }
   .womens__showing {
     display: none;
+  }
+  .womens__select {
+    display: block;
   }
   .products {
     margin-bottom: 75px;
