@@ -8,6 +8,7 @@
   text-align: center;
   box-shadow: 0 6px 16px -12px #2d2d2d;
   z-index: 100;
+  min-width: 1400px;
 }
 .header__link {
   display: block;
@@ -1054,6 +1055,9 @@
   }
   .viewport__button {
     margin-top: 27px;
+  }
+  .header {
+    min-width: auto;
   }
   .header__menu {
     display: none;
