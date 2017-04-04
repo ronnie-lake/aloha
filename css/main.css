@@ -279,7 +279,6 @@
   position: relative;
   text-align: center;
   vertical-align: center;
-  padding-top: 140px;
   box-sizing: border-box;
   overflow: hidden;
   transition: all 0.5s ease-out;
@@ -300,6 +299,7 @@
 }
 .categories__link {
   display: block;
+  padding-top: 140px;
   height: 100%;
   text-decoration: none;
 }
@@ -453,6 +453,10 @@
 .articles__item:not(:last-child) {
   margin-right: 11px;
 }
+.articles__link {
+  display: block;
+  text-decoration: none;
+}
 .articles__img {
   position: absolute;
   top: 0;
@@ -532,6 +536,7 @@
   padding: 16px 33px;
   letter-spacing: 1.5px;
   transition: all 0.3s ease;
+  outline: none;
 }
 .updates__button:hover {
   background-color: rgba(0, 0, 0, 0.4);
@@ -876,6 +881,8 @@
   font-weight: 700;
   margin-left: 8px;
   transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
 }
 .descript__button:hover {
   background-color: rgba(0, 0, 0, 0.4);
