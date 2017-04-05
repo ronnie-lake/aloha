@@ -27,6 +27,7 @@ gulp.task('js', function() {
 
 gulp.task('build', function(){
 	gulp.start('less');
+	gulp.start('js');
 });
 
 gulp.task('server', function(){
