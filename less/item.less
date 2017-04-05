@@ -30,7 +30,7 @@
 		overflow: hidden;
 
 		&.active {
-		display: inline-block;
+			display: inline-block;
 		}
 	}
 
@@ -40,14 +40,15 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+
 	&__navigation {
 		position: absolute;
 		bottom: -29px;
 		left: 50%;
 		transform: translate(-50%);
 		list-style: none;
-
 	}
+
 	&__navigation-item {
 		display: inline-block;
 		width: 11px;
@@ -71,6 +72,7 @@
 		padding: 53px 43px 53px 48px;
 	}
 }
+
 .descript {
 
 	&__nav {
@@ -168,7 +170,6 @@
 		font-family: 'Open Sans', sans-serif;
 		font-size: 16px;
 		width: 38px;
-
 	}
 
 	&__button {
@@ -191,57 +192,67 @@
 		}
 	}
 }
+
 .size {
 	display: inline-block;
 	vertical-align: top;
+
+	.selectric-wrapper {
+		width: 131px;
+		padding: 3px 0;
+	}
 }
-.size .selectric-wrapper {
-	width: 131px;
-	padding: 3px 0;
-}
+
 .color {
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 14px;
+
+	.selectric-wrapper {
+		width: 233px;
+		padding: 3px 0;
+	}
 }
-.color .selectric-wrapper {
-	width: 233px;
-	padding: 3px 0;
-}
+
 .selectric {
 	border-radius: 25px;
 	border: 1px solid #ececec;
+
+	.button {
+		border-radius: 20px;
+		border: 1px solid #ececec;
+		width: 20px;
+		height: 20px;
+		margin: 8px;
+	}
+
+	.label {
+		height: 41px;
+		font-size: 15px;
+		font-family: 'Raleway', sans-serif;
+		color: #b1b0b0;
+		padding: 1px 0 0 8px;
+	}
+
+	&-items {
+		border: 1px solid #ececec;
+
+		li.highlighted {
+			display: none;
+		}
+	}
 }
-.selectric .button {
-	border-radius: 20px;
-	border: 1px solid #ececec;
-	width: 20px;
-	height: 20px;
-	margin: 8px;
-}
-.selectric .label {
-	height: 41px;
-	font-size: 15px;
-	font-family: 'Raleway', sans-serif;
-	color: #b1b0b0;
-	padding: 1px 0 0 8px;
-}
-.selecrtic-items {
-	border: 1px solid #ececec;
-}
-.selectric-items li.highlighted {
-	display: none;
-}
+
 .likes {
 	font-size: 0;
-	&__caption {
-			font-family: 'Playfair Display', serif;
-			color: #242424;
-			font-size: 20px;
-			text-align: center;
 
-			padding: 87px 0 47px 0;
-			overflow: hidden;
+	&__caption {
+		font-family: 'Playfair Display', serif;
+		color: #242424;
+		font-size: 20px;
+		text-align: center;
+		padding: 87px 0 47px 0;
+		overflow: hidden;
 
 		&_italic {
 			font-style: italic;
@@ -261,6 +272,7 @@
 		line-height: 20px;
 		margin-bottom: 35px;
 	}
+
 	&__link { 
 		display: block;
 		height: 100%;
@@ -283,7 +295,6 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-
 	}
 
 	&__category {
@@ -294,12 +305,14 @@
 		margin-top: 25px;
 		letter-spacing: 1px;
 	}
+
 	&__name {
 		font-family: 'Playfair Display', serif;
 		color: #242424;
 		font-size: 18px;
 		margin: 5px 0 9px 0;
 	}
+	
 	&__price {
 		font-family: 'Open Sans', sans-serif;
 		color: #e66c62;

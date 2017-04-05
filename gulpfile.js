@@ -3,12 +3,26 @@ var watch = require('gulp-watch');
 var gulpLess = require('gulp-less');
 var browserSync = require('browser-sync');
 var plumber = require('gulp-plumber');
+var autoprefixer = require('gulp-autoprefixer');
+var cleanCss = require('gulp-clean-css');
+var uglify = require('gulp-uglify');
 
 gulp.task('less', function() {
 	gulp.src('./less/main.less')
 		.pipe(plumber())
 		.pipe(gulpLess())
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions']
+		}))
+		.pipe(cleanCss())
 		.pipe(gulp.dest('./css/'));
+});
+
+gulp.task('js', function() {
+	gulp.src('./js/main.js')
+		.pipe(plumber())
+		.pipe(uglify())
+		.pipe(gulp.dest('./js/build/'));
 });
 
 gulp.task('build', function(){
