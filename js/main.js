@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 	$('select').selectric();
 
@@ -37,6 +36,5 @@ $(document).ready(function() {
 		$(this).addClass('active');
 		parent.find('#slides .active').removeClass('active');
 		parent.find('#slides li:nth-child('+ num +')').addClass('active');
-		
-	})}
-})
+	});
+});
