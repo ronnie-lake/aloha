@@ -38,5 +38,5 @@ $(document).ready(function() {
 		parent.find('#slides .active').removeClass('active');
 		parent.find('#slides li:nth-child('+ num +')').addClass('active');
 		
-	})
+	})}
 })

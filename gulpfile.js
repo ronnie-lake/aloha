@@ -47,6 +47,8 @@ gulp.task('watch', function(){
 	  ]).on('change', browserSync.reload);
 	watch('./less/*.less', function() {
     	gulp.start('less');
+  	});
+  	watch('./js/*.js', function() {
     	gulp.start('js');
   	});
 });
